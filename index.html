@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peluquería Cherry's · Peluquería y estilistas en Palma (Camí de la Vileta)</title>
+<meta name="description" content="Peluquería Cherry's en el Camí de la Vileta, 55 (Palma). Cortes para mujer, hombre y niños, color, mechas, balayage y trenzas. Pide tu cita por teléfono.">
+<meta name="theme-color" content="#5e0f24">
+<meta property="og:title" content="Peluquería Cherry's · Palma">
+<meta property="og:description" content="Corte, color, balayage y trenzas para toda la familia. Camí de la Vileta, 55, Palma.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Peluquería Cherry's",
+  "telephone": "+34971734137",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Camí de la Vileta, 55",
+    "postalCode": "07011",
+    "addressLocality": "Palma",
+    "addressRegion": "Illes Balears",
+    "addressCountry": "ES"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 39.5896411, "longitude": 2.6241108 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "09:30", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:30", "closes": "14:00" }
+  ],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "reviewCount": "75" },
+  "sameAs": [
+    "https://www.instagram.com/peluqueriacherrys/",
+    "https://www.facebook.com/peluqueriacherrys.estilistas/"
+  ]
+}
+</script>
+
+<style>
+:root{
+  --cherry:#9b1c3a;
+  --cherry-dark:#5e0f24;
+  --cherry-deep:#3a0816;
+  --cream:#fbf5ef;
+  --blush:#f4d9d6;
+  --rose:#e8a0a8;
+  --gold:#c9a36b;
+  --ink:#2a1419;
+  --muted:#7a5d63;
+  --radius:22px;
+  --shadow:0 20px 50px -20px rgba(58,8,22,.45);
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{width:min(1160px,92%);margin-inline:auto}
+section{padding:clamp(70px,10vw,130px) 0;position:relative}
+.eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--cherry)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;letter-spacing:-.02em}
+h2{font-size:clamp(2.2rem,5.5vw,4rem);margin:.5rem 0 1rem}
+h2 em{font-style:italic;font-weight:400;color:var(--cherry)}
+.lead{max-width:56ch;color:var(--muted);font-size:1.08rem}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.6rem;border-radius:999px;font-weight:600;font-size:.98rem;transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-3px)}
+.btn-wa{background:linear-gradient(135deg,#ecd0a0,#c9a36b);color:#3a0816;box-shadow:0 12px 30px -10px rgba(201,163,107,.8)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.5);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-dark{background:var(--cherry);color:#fff}
+.btn-dark:hover{background:var(--cherry-dark)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* NAV */
+header.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s,padding .3s;padding:18px 0}
+header.nav::before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(251,245,239,.96);backdrop-filter:blur(14px)}
+header.nav.scrolled{box-shadow:0 6px 20px -12px rgba(58,8,22,.45);padding:10px 0 0}
+.nav .wrap{padding-bottom:10px}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:.6rem;font-family:var(--serif);font-weight:800;font-size:1.45rem;color:#fff;transition:color .3s}
+.nav.scrolled .logo{color:var(--cherry-dark)}
+.logo svg{width:30px;height:30px}
+.menu{display:flex;gap:2rem;align-items:center}
+.menu a{font-size:.92rem;font-weight:500;color:#fff;opacity:.9;position:relative;transition:color .3s}
+.nav.scrolled .menu a{color:var(--ink)}
+.menu a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:var(--gold);transition:width .3s}
+.menu a:not(.btn):hover::after{width:100%}
+.menu .btn{padding:.6rem 1.2rem;font-size:.88rem;color:#3a0816}
+.burger{display:none;width:44px;height:44px;border-radius:50%;align-items:center;justify-content:center;color:#fff}
+.nav.scrolled .burger{color:var(--cherry-dark)}
+.burger span,.burger span::before,.burger span::after{display:block;width:22px;height:2px;background:currentColor;position:relative;transition:.3s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0}
+.burger span::before{top:-7px}.burger span::after{top:7px}
+.nav.open .burger span{background:transparent}
+.nav.open .burger span::before{top:0;transform:rotate(45deg)}
+.nav.open .burger span::after{top:0;transform:rotate(-45deg)}
+
+/* HERO */
+.hero{min-height:auto;display:grid;align-items:center;color:#fff;padding:104px 0 70px;overflow:hidden;
+  background:radial-gradient(1000px 600px at 85% 10%,#b8294a 0%,transparent 60%),radial-gradient(800px 500px at 0% 100%,#7d1230 0%,transparent 60%),linear-gradient(160deg,var(--cherry-dark),var(--cherry-deep))}
+.hero::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");mix-blend-mode:overlay;pointer-events:none}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.hero .eyebrow{color:var(--rose)}
+.hero h1{font-size:clamp(2.8rem,6.4vw,5.6rem);margin:.8rem 0 1.2rem}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--rose)}
+.hero p.lead{color:rgba(255,255,255,.82);font-size:1.18rem}
+.hero .cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2rem}
+.rating{display:inline-flex;align-items:center;gap:.7rem;margin-top:2.2rem;padding:.55rem 1.1rem;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);font-size:.9rem;backdrop-filter:blur(6px)}
+.stars{color:var(--gold);letter-spacing:2px}
+.hero-bg{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.22}
+.hero-art{position:relative;max-width:500px;width:100%;justify-self:center}
+.logo-frame{background:var(--cream);padding:10px;border-radius:32px;box-shadow:0 35px 80px -20px rgba(0,0,0,.65);transform:rotate(1.5deg);transition:transform .4s}
+.logo-frame:hover{transform:rotate(0)}
+.logo-frame img{width:100%;height:auto;display:block;border-radius:24px}
+.hero-art .tag{left:-18px;bottom:-18px}
+.hero-logo{display:inline-flex;background:var(--cream);padding:.8rem 1.3rem;border-radius:20px;box-shadow:var(--shadow);margin-bottom:1.3rem}
+.hero-logo img{height:clamp(54px,8vw,84px);width:auto}
+.hero-art{position:relative;aspect-ratio:3/4;max-width:380px;justify-self:center;width:100%}
+.arch{position:absolute;inset:0;border-radius:999px 999px 28px 28px;background:linear-gradient(180deg,var(--blush),var(--rose) 60%,var(--cherry));overflow:hidden;box-shadow:var(--shadow)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.arch .cherry-big{position:absolute;left:50%;top:52%;width:62%;transform:translate(-50%,-50%);filter:drop-shadow(0 20px 25px rgba(58,8,22,.45));animation:float 6s ease-in-out infinite}
+.orb{position:absolute;border-radius:50%;background:var(--gold);opacity:.9}
+.orb.a{width:70px;height:70px;right:-18px;top:14%;background:radial-gradient(circle at 30% 30%,#f3d8a6,var(--gold));animation:float 5s ease-in-out infinite}
+.orb.b{width:34px;height:34px;left:-14px;bottom:20%;background:radial-gradient(circle at 30% 30%,#ff8fa3,var(--cherry));animation:float 7s ease-in-out infinite reverse}
+.tag{position:absolute;left:-26px;bottom:8%;background:#fff;color:var(--ink);padding:.7rem 1rem;border-radius:16px;box-shadow:var(--shadow);font-size:.82rem;line-height:1.3;animation:float 6.5s ease-in-out infinite}
+.tag b{display:block;font-family:var(--serif);font-size:1.05rem;color:var(--cherry)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.arch .cherry-big{animation-name:floatc}
+@keyframes floatc{0%,100%{transform:translate(-50%,-50%)}50%{transform:translate(-50%,-56%)}}
+
+/* MARQUEE */
+.marquee{background:var(--cherry);color:var(--blush);padding:1.1rem 0;overflow:hidden;white-space:nowrap;font-family:var(--serif);font-size:1.5rem;font-style:italic}
+.marquee .track{display:inline-flex;gap:2.5rem;animation:scroll 28s linear infinite}
+.marquee span::after{content:"✦";margin-left:2.5rem;color:var(--gold);font-style:normal;font-size:1rem}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ABOUT */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.feats{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.feat{background:#fff;border-radius:var(--radius);padding:1.5rem;box-shadow:0 10px 30px -18px rgba(58,8,22,.4);transition:transform .3s}
+.feat:hover{transform:translateY(-6px)}
+.feat .ic{width:46px;height:46px;border-radius:14px;background:var(--blush);color:var(--cherry);display:grid;place-items:center;margin-bottom:.9rem;font-size:1.3rem}
+.feat h3{font-size:1.15rem;margin-bottom:.3rem;letter-spacing:0}
+.feat p{font-size:.9rem;color:var(--muted)}
+
+/* CARTA */
+.carta{background:var(--cherry-deep);color:#fff}
+.carta .eyebrow{color:var(--rose)}
+.carta h2 em{color:var(--rose)}
+.carta .lead{color:rgba(255,255,255,.7)}
+.tabs{display:flex;flex-wrap:wrap;gap:.6rem;margin:2.2rem 0 2rem}
+.tab{padding:.65rem 1.3rem;border-radius:999px;border:1.5px solid rgba(255,255,255,.25);font-weight:500;font-size:.92rem;transition:.25s}
+.tab:hover{border-color:var(--rose)}
+.tab[aria-selected="true"]{background:var(--rose);color:var(--cherry-deep);border-color:var(--rose)}
+.panel{display:none;animation:fade .45s}
+.panel.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.items{display:grid;grid-template-columns:1fr 1fr;gap:0 4rem}
+.item{display:grid;grid-template-columns:1fr auto;gap:.2rem 1rem;padding:1.2rem 0;border-bottom:1px solid rgba(255,255,255,.12);transition:padding .3s,background .3s;border-radius:6px}
+.item:hover{padding-left:.8rem;background:rgba(255,255,255,.04)}
+.item h3{font-size:1.25rem;letter-spacing:0;font-weight:600}
+.item .price{font-family:var(--serif);font-size:1.35rem;color:var(--gold);white-space:nowrap}
+.item p{grid-column:1/-1;font-size:.88rem;color:rgba(255,255,255,.62)}
+.note{margin-top:2rem;font-size:.85rem;color:rgba(255,255,255,.55);max-width:70ch}
+
+/* GALERIA */
+.gal-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:2.4rem}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:clamp(180px,22vw,280px);gap:14px}
+.tile{position:relative;border-radius:var(--radius);overflow:hidden;cursor:zoom-in;isolation:isolate;transition:transform .4s}
+.tile:hover{transform:scale(.985)}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s;z-index:1}
+.tile:hover img{transform:scale(1.07)}
+.tile::before{content:"";position:absolute;inset:0;z-index:0}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.2rem 1rem .9rem;z-index:2;color:#fff;font-family:var(--serif);font-size:1.15rem;background:linear-gradient(transparent,rgba(58,8,22,.75));opacity:0;transform:translateY(10px);transition:.35s}
+.tile:hover figcaption,.tile:focus-visible figcaption{opacity:1;transform:none}
+.tile.noimg{cursor:default}
+.tile.noimg figcaption{opacity:1;transform:none;background:none;font-size:1.3rem;inset:0;display:flex;align-items:end}
+.t1{grid-row:span 2}
+.t1::before{background:linear-gradient(160deg,#c9506a,#5e0f24)}
+.t2::before{background:linear-gradient(120deg,#e8a0a8,#9b1c3a)}
+.t3::before{background:linear-gradient(160deg,#c9a36b,#7d1230)}
+.t4::before{background:linear-gradient(160deg,#f4d9d6,#c9506a)}
+.t5::before{background:linear-gradient(180deg,#3a0816,#b8294a)}
+.t6::before{background:linear-gradient(140deg,#e8a0a8,#c9a36b)}
+.t7::before{background:linear-gradient(160deg,#7d1230,#e8a0a8)}
+.t8::before{background:linear-gradient(100deg,#9b1c3a,#f4d9d6)}
+.gal-note{margin-top:1.4rem;font-size:.85rem;color:var(--muted)}
+.gal-note a{color:var(--cherry);font-weight:600;border-bottom:1px solid currentColor}
+
+/* LIGHTBOX */
+.lb{position:fixed;inset:0;background:rgba(30,4,12,.92);z-index:90;display:none;place-items:center;padding:2rem}
+.lb.open{display:grid}
+.lb img{max-height:86vh;border-radius:14px}
+.lb button{position:absolute;top:18px;right:22px;color:#fff;font-size:2.2rem;line-height:1}
+
+/* HORARIOS + MAPA */
+.visit{background:var(--blush)}
+.visit .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4rem);align-items:stretch}
+.status{display:inline-flex;align-items:center;gap:.5rem;font-weight:600;font-size:.9rem;padding:.4rem .9rem;border-radius:999px;background:#fff;margin:.4rem 0 1.4rem}
+.dot{width:10px;height:10px;border-radius:50%;background:#aaa}
+.status.open .dot{background:#1fa855;box-shadow:0 0 0 4px rgba(31,168,85,.2)}
+.status.closed .dot{background:var(--cherry)}
+.hours{list-style:none;background:#fff;border-radius:var(--radius);padding:.6rem 1.6rem;box-shadow:0 10px 30px -18px rgba(58,8,22,.4)}
+.hours li{display:flex;justify-content:space-between;padding:.85rem 0;border-bottom:1px dashed rgba(94,15,36,.18)}
+.hours li:last-child{border:0}
+.hours li.today{color:var(--cherry);font-weight:700}
+.hours .closed-day{color:var(--muted)}
+.contact{display:grid;gap:.5rem;margin-top:1.6rem;font-size:.98rem}
+.contact a{display:flex;gap:.7rem;align-items:center;font-weight:500}
+.contact a:hover{color:var(--cherry)}
+.mapbox{border-radius:var(--radius);overflow:hidden;min-height:440px;background:#e9cfd0;position:relative;box-shadow:var(--shadow)}
+.mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map-ph{position:absolute;inset:0;display:grid;place-content:center;text-align:center;gap:1rem;padding:2rem;background:repeating-linear-gradient(45deg,#f1d7d8,#f1d7d8 14px,#ecc9cb 14px,#ecc9cb 28px)}
+.map-ph p{max-width:34ch;color:var(--cherry-dark);font-size:.95rem}
+.map-ph .row{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap}
+.btn-line{border:1.5px solid var(--cherry);color:var(--cherry)}
+
+/* FOOTER */
+footer{background:var(--cherry-deep);color:rgba(255,255,255,.75);padding:3.5rem 0 2rem;font-size:.92rem}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem}
+footer h4{font-family:var(--serif);color:#fff;font-size:1.1rem;margin-bottom:.8rem;font-weight:600}
+footer a:hover{color:var(--rose)}
+footer li{list-style:none;margin:.35rem 0}
+.copy{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:1.4rem;margin-top:.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.82rem}
+.copy button{text-decoration:underline;color:inherit}
+
+.to-top{position:fixed;right:28px;bottom:96px;z-index:60;width:48px;height:48px;border-radius:50%;background:var(--cherry);color:#fff;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(58,8,22,.6);opacity:0;visibility:hidden;transform:translateY(10px);transition:.3s}
+.to-top.show{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--cherry-dark);transform:translateY(-3px)}
+.to-top svg{width:22px;height:22px}
+/* WHATSAPP FLOAT */
+.wa-float{position:fixed;right:20px;bottom:20px;z-index:60;width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,#ecd0a0,#c9a36b);color:#3a0816;display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(201,163,107,.9);transition:transform .25s}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float::before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #c9a36b;animation:ping 2.4s infinite}
+.wa-float svg{width:28px;height:28px}
+@keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.7);opacity:0}}
+
+/* COOKIES */
+.cookie{position:fixed;left:20px;right:20px;bottom:20px;max-width:560px;z-index:80;background:#fff;border-radius:20px;box-shadow:0 25px 60px -15px rgba(30,4,12,.55);padding:1.4rem 1.5rem;display:none;border:1px solid rgba(94,15,36,.1)}
+.cookie.show{display:block;animation:fade .5s}
+.cookie h3{font-size:1.25rem;margin-bottom:.4rem;letter-spacing:0}
+.cookie p{font-size:.88rem;color:var(--muted)}
+.cookie p a{color:var(--cherry);text-decoration:underline;cursor:pointer}
+.cookie .row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem}
+.cookie .btn{padding:.65rem 1.2rem;font-size:.88rem}
+.modal{position:fixed;inset:0;background:rgba(30,4,12,.6);z-index:95;display:none;place-items:center;padding:1rem}
+.modal.open{display:grid}
+.modal .box{background:#fff;border-radius:24px;max-width:560px;width:100%;max-height:88vh;overflow:auto;padding:1.8rem}
+.modal h3{font-size:1.5rem;margin-bottom:.6rem;letter-spacing:0}
+.modal p,.modal li{font-size:.9rem;color:var(--muted)}
+.opt{display:flex;justify-content:space-between;gap:1rem;align-items:center;padding:1rem 0;border-bottom:1px solid #eee}
+.opt b{display:block;color:var(--ink);font-size:.95rem}
+.sw{position:relative;width:48px;height:28px;flex:none}
+.sw input{opacity:0;position:absolute;inset:0;width:100%;height:100%;cursor:pointer;z-index:2}
+.sw i{position:absolute;inset:0;background:#ccc;border-radius:99px;transition:.25s}
+.sw i::after{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:#fff;left:3px;top:3px;transition:.25s}
+.sw input:checked+i{background:var(--cherry)}
+.sw input:checked+i::after{transform:translateX(20px)}
+.sw input:disabled+i{opacity:.55}
+.policy{margin-top:1rem}
+.policy ul{margin:.5rem 0 .5rem 1.2rem}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero .wrap,.about .wrap,.visit .wrap{grid-template-columns:1fr}
+  .hero-art{max-width:440px;order:-1}
+  .items{grid-template-columns:1fr}
+  .grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:44vw}
+  footer .wrap{grid-template-columns:1fr}
+  .burger{display:flex}
+  .menu{position:fixed;inset:0 0 0 auto;width:min(78vw,320px);background:var(--cherry-deep);flex-direction:column;justify-content:center;gap:1.6rem;transform:translateX(100%);transition:transform .4s;z-index:3}
+  .menu a,.nav.scrolled .menu a{color:#fff;font-size:1.2rem}
+  .nav.open .menu{transform:none}
+  .nav.open .burger{position:relative;z-index:2;color:#fff}
+  .hero{padding-top:88px}
+}
+@media(max-width:520px){.feats{grid-template-columns:1fr}.tag{left:-6px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav scrolled" id="nav">
+  <div class="wrap">
+    <a href="#inicio" class="logo" aria-label="Peluquería Cherry's, inicio">
+      <svg viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="21" stroke="#c9a36b" stroke-width="2"/><g stroke="currentColor" stroke-width="2.6"><path d="M32 12 L18 30"/><path d="M16 12 L30 30"/><circle cx="17" cy="34" r="4.2"/><circle cx="31" cy="34" r="4.2"/></g></svg>
+      Cherry's
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#carta">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#visitanos">Horarios</a>
+      <a href="#" class="btn btn-wa" data-wa="Hola Cherry's, me gustaría pedir cita.">Pedir cita</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ============ PORTADA ============ -->
+<section class="hero" id="inicio">
+  <div class="hero-bg" aria-hidden="true"><img src="https://i.imgur.com/ZfIXFZL.png" alt="" onerror="this.remove()"></div>
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Peluquería · Estilistas · Palma</p>
+      <h1>Cherry's, <em>tu pelo</em> en buenas manos.</h1>
+      <p class="lead">Corte, color, mechas, balayage y trenzas para mujeres, hombres y niños. Un salón de barrio en el Camí de la Vileta con trato cercano y cuidado en cada detalle.</p>
+      <div class="cta">
+        <a href="#" class="btn btn-wa" data-wa="Hola Cherry's, me gustaría pedir cita.">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Llamar para reservar
+        </a>
+        <a href="#carta" class="btn btn-ghost">Ver servicios y precios</a>
+      </div>
+      <div class="rating"><span class="stars" aria-hidden="true">★★★★★</span><span><b>4,6</b> en Google · 75 reseñas</span></div>
+    </div>
+    <div class="hero-art">
+      <div class="logo-frame"><img src="https://i.imgur.com/zZ7GyI6.png" alt="Logotipo de Peluquería Cherry's: el amor y el cabello solo brillan cuando se dejan en las manos correctas" onerror="this.closest('.hero-art').remove()"></div>
+      <div class="tag"><b>Mujer · Hombre · Niños</b>Camí de la Vileta, 55</div>
+    </div>
+  </div>
+</section>
+
+
+<div class="marquee" aria-hidden="true">
+  <div class="track">
+    <span>Corte</span><span>Color</span><span>Mechas</span><span>Balayage</span><span>Trenzas</span><span>Corte infantil</span><span>Corrección de color</span><span>Tratamientos</span>
+    <span>Corte</span><span>Color</span><span>Mechas</span><span>Balayage</span><span>Trenzas</span><span>Corte infantil</span><span>Corrección de color</span><span>Tratamientos</span>
+  </div>
+</div>
+
+<!-- ============ NOSOTROS ============ -->
+<section class="about" id="nosotros">
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">El salón</p>
+      <h2>Un salón de barrio con <em>manos de estilista</em></h2>
+      <p class="lead">El cuidado del cabello y la peluquería de toda la vida son la esencia de Cherry's. Trabajamos con cortes precisos y trato cercano, con técnicas probadas y atención a lo que cada persona pide, para que el resultado sea sano y fácil de llevar en el día a día.</p>
+      <p class="lead" style="margin-top:1rem">Antes de empezar, escuchamos y miramos cómo es tu pelo para proponerte una forma que vaya con tus facciones, ya sea para sanear puntas o para renovar el corte por completo. Muchas clientas y clientes vienen desde hace años y nos conocen por un local limpio, un ambiente tranquilo y familiar y un equipo que transmite confianza.</p>
+      <p class="lead" style="margin-top:1rem">También nos defendemos muy bien en la corrección de color y en los tratamientos tras decoloraciones o extensiones.</p>
+      <p style="margin-top:1.8rem"><a href="#" class="btn btn-dark" data-wa="Hola Cherry's, quería consultar un servicio.">Consúltanos sin compromiso</a></p>
+    </div>
+    <div class="feats rv">
+      <div class="feat"><div class="ic">✂</div><h3>Para toda la familia</h3><p>Cortes de mujer, de hombre y de niños en el mismo sitio.</p></div>
+      <div class="feat"><div class="ic">◐</div><h3>Color y balayage</h3><p>Mechas, balayage y correcciones de color a medida.</p></div>
+      <div class="feat"><div class="ic">❀</div><h3>Trenzas y peinados</h3><p>Trenzado de cabello y peinados para el día a día o para ocasiones.</p></div>
+      <div class="feat"><div class="ic">♿</div><h3>Accesible para todos</h3><p>Entrada accesible para silla de ruedas y zona de lavado cómoda, con pago con tarjeta o contactless.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARTA ============ -->
+<section class="carta" id="carta">
+  <div class="wrap">
+    <p class="eyebrow rv">Servicios y precios</p>
+    <h2 class="rv">Nuestra <em>carta</em></h2>
+    <p class="lead rv">Pulsa en cualquier servicio para llamarnos y pedir tu cita.</p>
+
+    <div class="tabs" role="tablist" aria-label="Categorías de la carta">
+      <button class="tab" role="tab" aria-selected="true" aria-controls="p-corte" id="t-corte">Corte</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-color" id="t-color">Color</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-estilo" id="t-estilo">Peinados y cuidado</button>
+    </div>
+
+    <!-- PRECIOS DEMO: sustituir por la tarifa real del cliente. Están marcados con data-demo para localizarlos rápido. -->
+    <div class="panel active" role="tabpanel" id="p-corte" aria-labelledby="t-corte">
+      <div class="items">
+        <a class="item" href="#" data-wa="Hola Cherry's, quiero pedir cita para corte de mujer."><h3>Corte de mujer</h3><span class="price" data-demo>20 €</span><p>Lavado, corte y secado a tu estilo.</p></a>
+        <a class="item" href="#" data-wa="Hola Cherry's, quiero pedir cita para corte de hombre."><h3>Corte de hombre</h3><span class="price" data-demo>12 €</span><p>Corte clásico o moderno, con acabado a medida.</p></a>
+        <a class="item" href="#" data-wa="Hola Cherry's, quiero pedir cita para corte infantil."><h3>Corte infantil</h3><span class="price" data-demo>10 €</span><p>Para los más pequeños de la casa.</p></a>
+        <a class="item" href="#" data-wa="Hola Cherry's, quiero pedir cita para lavar y marcar."><h3>Lavar y marcar</h3><span class="price" data-demo>15 €</span><p>Lavado y peinado con secador.</p></a>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-color" aria-labelledby="t-color">
+      <div class="items">
+        <a class="item" href="#" data-wa="Hola Cherry's, quiero pedir cita para tinte."><h3>Coloración</h3><span class="price" data-demo>desde 30 €</span><p>Tinte de raíz o de melena completa.</p></a>
+        <a class="item" href="#" data-wa="Hola Cherry's, quiero pedir cita para mechas."><h3>Mechas</h3><span class="price" data-demo>desde 55 €</span><p>Luz y dimensión para tu color.</p></a>
+        <a class="item" href="#" data-wa="Hola Cherry's, quiero pedir cita para balayage."><h3>Mechas balayage</h3><span class="price" data-demo>desde 120 €</span><p>Degradado natural pintado a mano.</p></a>
+        <a class="item" href="#" data-wa="Hola Cherry's, quiero consultar una corrección de color."><h3>Corrección de color</h3><span class="price">Consultar</span><p>Valoramos tu cabello y te damos presupuesto.</p></a>
+      </div>
+    </div>
+
+    <div class="panel" role="tabpanel" id="p-estilo" aria-labelledby="t-estilo">
+      <div class="items">
+        <a class="item" href="#" data-wa="Hola Cherry's, quiero pedir cita para trenzas."><h3>Trenzado de cabello</h3><span class="price" data-demo>desde 25 €</span><p>Trenzas para el día a día o para un evento.</p></a>
+        <a class="item" href="#" data-wa="Hola Cherry's, quiero pedir cita para un peinado."><h3>Peinado</h3><span class="price" data-demo>desde 35 €</span><p>Recogidos y peinados para ocasiones especiales.</p></a>
+        <a class="item" href="#" data-wa="Hola Cherry's, quiero consultar un tratamiento capilar."><h3>Tratamiento reparador</h3><span class="price" data-demo>desde 20 €</span><p>Cuidado tras decoloraciones, extensiones o cabello castigado.</p></a>
+      </div>
+    </div>
+
+    <p class="note rv">Precios orientativos. El presupuesto final depende del largo, la densidad y el estado del cabello; si tienes dudas, escríbenos y te lo confirmamos antes de la cita.</p>
+  </div>
+</section>
+
+<!-- ============ GALERÍA ============ -->
+<section class="gallery" id="galeria">
+  <div class="wrap">
+    <div class="gal-head">
+      <div class="rv">
+        <p class="eyebrow">Galería</p>
+        <h2>Nuestro <em>trabajo</em></h2>
+        <p class="lead">Una muestra de cortes, color y peinados. Más en nuestras redes.</p>
+      </div>
+      <p class="rv"><a href="https://www.instagram.com/peluqueriacherrys/" target="_blank" rel="noopener" class="btn btn-dark">@peluqueriacherrys</a></p>
+    </div>
+    <!-- MUESTRAS: enlaces temporales de Facebook (caducan hacia el 24-25/11/2026). Sustituir por img/galeria-1.jpg ... galeria-7.jpg -->
+    <div class="grid rv" id="grid">
+      <figure class="tile t1"><img src="https://scontent.fvlc9-1.fna.fbcdn.net/v/t51.82787-15/877679740_18338096212275988_7859745714808358077_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1500x1843&amp;ctp=s1500x1843&amp;_nc_cat=108&amp;_nc_map=urlgen_bucketless&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=2MqseNvRChQQ7kNvwElrfm0&amp;_nc_oc=Ado_7Cg_8kieS5Kf-IZLLn8PnQlMGslxVZHC_5w6T7WUXcYLP42q433RS6AQ6MaRS28&amp;_nc_zt=23&amp;_nc_ht=scontent.fvlc9-1.fna&amp;_nc_gid=vN1vveIp9o746BNAns7hEg&amp;_nc_ss=7b2a8&amp;oh=00_AQQe0jHDYfZUun6PlFHiv0eADMamGLngbWnOAzcN4ubs9g&amp;oe=6B05B5AB" alt="Trabajo realizado en Peluquería Cherry's" loading="lazy" referrerpolicy="no-referrer"></figure>
+      <figure class="tile t2"><img src="https://scontent.fvlc10-1.fna.fbcdn.net/v/t51.82787-15/873599786_18337008214275988_946570467899792387_n.jpg?stp=c0.165.1500.1500a_dst-jpg_tt6&amp;cstp=mx1500x1500&amp;ctp=s206x206&amp;_nc_cat=109&amp;_nc_map=urlgen_bucketless&amp;ccb=1-7&amp;_nc_sid=714c7a&amp;_nc_ohc=ez15qFLPqo0Q7kNvwF0n246&amp;_nc_oc=AdogqiqAJffTL4ws__L9MrWNUfq6EdVm2nz_8qKTRaItapvs3XJ1h6oodrKoqJqXvJs&amp;_nc_zt=23&amp;_nc_ht=scontent.fvlc10-1.fna&amp;_nc_gid=Eq4nJFHybykFpWBU8A2Xdw&amp;_nc_ss=7b2a8&amp;oh=00_AQTL9E1RTpdKeMEn-meVEdBuVnn02sMxE-v1JbwjmAfY2A&amp;oe=6B05C9C5" alt="Trabajo realizado en Peluquería Cherry's" loading="lazy" referrerpolicy="no-referrer"></figure>
+      <figure class="tile t3"><img src="https://scontent.fvlc9-1.fna.fbcdn.net/v/t51.82787-15/875599670_18337007800275988_4144944643246832403_n.jpg?stp=c0.132.1200.1200a_dst-jpg_tt6&amp;cstp=mx1200x1200&amp;ctp=s206x206&amp;_nc_cat=111&amp;_nc_map=urlgen_bucketless&amp;ccb=1-7&amp;_nc_sid=714c7a&amp;_nc_ohc=LMnXZd3tJmkQ7kNvwH8EQbD&amp;_nc_oc=AdqXPlBTv8lNAji9W869lQaj8x667ii0GryreD75R5kujYrobgaxxTuoSNXN6wBvMhU&amp;_nc_zt=23&amp;_nc_ht=scontent.fvlc9-1.fna&amp;_nc_gid=4e6JI8HhXgZQ4EAPmWdLbg&amp;_nc_ss=7b2a8&amp;oh=00_AQSEtfuGmSnYpIrsvGTVOYgOwb5e2a8g1KZLy5AAb2a-jg&amp;oe=6B05B1CE" alt="Trabajo realizado en Peluquería Cherry's" loading="lazy" referrerpolicy="no-referrer"></figure>
+      <figure class="tile t4"><img src="https://scontent.fvlc9-1.fna.fbcdn.net/v/t51.82787-15/841609858_18333672493275988_5230315933801627354_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx652x652&amp;ctp=s206x206&amp;_nc_cat=111&amp;_nc_map=urlgen_bucketless&amp;ccb=1-7&amp;_nc_sid=714c7a&amp;_nc_ohc=cD24y_-z7KEQ7kNvwEz65By&amp;_nc_oc=Adrkg3ap-6-Az3gS9GBcxwQovXESueAEjWmgTVFhQAB3qznFdqy230K_5mVMKZVefDA&amp;_nc_zt=23&amp;_nc_ht=scontent.fvlc9-1.fna&amp;_nc_gid=i3nKon5ExyolP2e39T0lCw&amp;_nc_ss=7b2a8&amp;oh=00_AQQR648YAdEtpxFyjlof4Jea774lYhExWCgmFn1jqt9Ubg&amp;oe=6B05DBB8" alt="Trabajo realizado en Peluquería Cherry's" loading="lazy" referrerpolicy="no-referrer"></figure>
+      <figure class="tile t5"><img src="https://scontent.fvlc9-1.fna.fbcdn.net/v/t51.82787-15/807797768_18331364041275988_7933020937116715173_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1200x1200&amp;ctp=s206x206&amp;_nc_cat=106&amp;_nc_map=urlgen_bucketless&amp;ccb=1-7&amp;_nc_sid=714c7a&amp;_nc_ohc=eFAzTkci3wwQ7kNvwG-O3v3&amp;_nc_oc=AdoUHb_fF645jnbes0ZH7MrYuW6a7RLMtQoJdoZVSRXYqCe2-bQS8XSvoMsKZgCpIdQ&amp;_nc_zt=23&amp;_nc_ht=scontent.fvlc9-1.fna&amp;_nc_gid=i3nKon5ExyolP2e39T0lCw&amp;_nc_ss=7b2a8&amp;oh=00_AQQhgWMCorez65C6ty-85ULkyUIfJij3kqK3CkBwXDdtOQ&amp;oe=6B05BAA1" alt="Trabajo realizado en Peluquería Cherry's" loading="lazy" referrerpolicy="no-referrer"></figure>
+      <figure class="tile t6"><img src="https://scontent.fvlc9-1.fna.fbcdn.net/v/t51.82787-15/744251236_18320994964275988_5697330695610457858_n.jpg?stp=c0.169.1536.1536a_dst-jpg_tt6&amp;cstp=mx1536x1536&amp;ctp=s206x206&amp;_nc_cat=103&amp;_nc_map=urlgen_bucketless&amp;ccb=1-7&amp;_nc_sid=714c7a&amp;_nc_ohc=QJSJ1p9boxYQ7kNvwETPk3L&amp;_nc_oc=AdrOVk1uTw_jmZUwB2GAoldZFYZcAlqN83INeNKtkAggFlJ60KkiZJbmBycxPy7YORw&amp;_nc_zt=23&amp;_nc_ht=scontent.fvlc9-1.fna&amp;_nc_gid=sYv4wEhmyBfYY_AxkFSiUA&amp;_nc_ss=7b2a8&amp;oh=00_AQQmauaQT-ALCzud7uS8j1486XtuqZtetF1q4CbvU-DymA&amp;oe=6B05D6DC" alt="Trabajo realizado en Peluquería Cherry's" loading="lazy" referrerpolicy="no-referrer"></figure>
+      <figure class="tile t7"><img src="https://scontent.fvlc9-1.fna.fbcdn.net/v/t51.82787-15/698296871_18312589045275988_842663016448262921_n.jpg?stp=c0.132.1200.1200a_dst-jpg_tt6&amp;cstp=mx1200x1200&amp;ctp=s206x206&amp;_nc_cat=103&amp;_nc_map=urlgen_bucketless&amp;ccb=1-7&amp;_nc_sid=714c7a&amp;_nc_ohc=4rh6UUuYafYQ7kNvwFuEoqM&amp;_nc_oc=AdquxQZtchD4DOayklqprBiabFXZ9P1rtYzfSxTOi6UFaq3vkybuiHgEtWTGYpdpEEg&amp;_nc_zt=23&amp;_nc_ht=scontent.fvlc9-1.fna&amp;_nc_gid=-17FzYqthYH2yEIjD8p2iw&amp;_nc_ss=7b2a8&amp;oh=00_AQSzM56yvq7O7Ke05Qsjb-IfZs16rrOBdrhY-NtWdoajnQ&amp;oe=6B05C0BD" alt="Trabajo realizado en Peluquería Cherry's" loading="lazy" referrerpolicy="no-referrer"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HORARIOS + MAPA ============ -->
+<section class="visit" id="visitanos">
+  <div class="wrap">
+    <div class="rv">
+      <p class="eyebrow">Visítanos</p>
+      <h2>Horarios y <em>cómo llegar</em></h2>
+      <p class="lead" style="margin-bottom:1rem">Estamos en el Camí de la Vileta (Ponent), una zona residencial tranquila, lejos del bullicio turístico, bien comunicada en transporte público y con acceso sencillo en coche. Llámanos al 971 73 41 37 para pedir cita.</p>
+      <div class="status" id="status" role="status"><span class="dot"></span><span id="statusText">Comprobando horario…</span></div>
+      <ul class="hours" id="hours">
+        <li data-d="1"><span>Lunes</span><span class="closed-day">Cerrado</span></li>
+        <li data-d="2"><span>Martes</span><span>9:30 – 19:00</span></li>
+        <li data-d="3"><span>Miércoles</span><span>9:30 – 19:00</span></li>
+        <li data-d="4"><span>Jueves</span><span>9:30 – 19:00</span></li>
+        <li data-d="5"><span>Viernes</span><span>9:30 – 19:00</span></li>
+        <li data-d="6"><span>Sábado</span><span>9:30 – 14:00</span></li>
+        <li data-d="0"><span>Domingo</span><span class="closed-day">Cerrado</span></li>
+      </ul>
+      <div class="contact">
+        <a href="https://maps.google.com/?daddr=Cam%C3%AD%20de%20la%20Vileta%2C%2055%2C%2007011%20Palma" target="_blank" rel="noopener">📍 Camí de la Vileta, 55 · 07011 Palma</a>
+        <a href="tel:+34971734137">📞 971 73 41 37</a>
+        <a href="#" data-wa="Hola Cherry's, quería preguntaros una cosa.">📞 Reserva tu cita por teléfono</a>
+      </div>
+    </div>
+    <div class="mapbox rv" id="mapbox">
+      <div class="map-ph" id="mapPh">
+        <div>
+          <p><b>Mapa de Google</b><br>Para mostrar el mapa necesitamos tu permiso para cargar contenido de Google.</p>
+        </div>
+        <div class="row">
+          <button class="btn btn-dark" id="loadMap">Aceptar y cargar mapa</button>
+          <a class="btn btn-line" href="https://maps.google.com/?daddr=Cam%C3%AD%20de%20la%20Vileta%2C%2055%2C%2007011%20Palma" target="_blank" rel="noopener">Abrir en Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>Peluquería Cherry's</h4>
+      <p>Peluquería y estilistas en Palma. Mujer, hombre y niños.<br>Camí de la Vileta, 55 · 07011 Palma (Illes Balears)</p>
+    </div>
+    <div>
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#carta">Servicios y precios</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#visitanos">Horarios y mapa</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Síguenos</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/peluqueriacherrys/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.facebook.com/peluqueriacherrys.estilistas/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="tel:+34971734137">971 73 41 37</a></li>
+      </ul>
+    </div>
+    <div class="copy">
+      <span>© <span id="year"></span> Peluquería Cherry's. Todos los derechos reservados.</span>
+      <span><button id="openPolicy">Política de cookies</button> · <button id="openPrefs">Configurar cookies</button></span>
+    </div>
+  </div>
+</footer>
+
+<!-- Volver arriba -->
+<a href="#inicio" class="to-top" id="toTop" aria-label="Volver al inicio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+
+<!-- WhatsApp flotante -->
+<a href="#" class="wa-float" data-wa="Hola Cherry's, me gustaría pedir cita." aria-label="Llamar para pedir cita">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+
+<!-- Lightbox -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Imagen ampliada"><button aria-label="Cerrar">×</button><img alt="" id="lbImg" referrerpolicy="no-referrer"></div>
+
+<!-- ============ COOKIES ============ -->
+<div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+  <h3>🍒 Cookies</h3>
+  <p>Usamos cookies técnicas necesarias para que la web funcione. Si quieres, también cargamos el mapa de Google, que puede instalar cookies de terceros. Puedes aceptar, rechazar o elegir. Más información en la <a id="cookiePolicyLink">política de cookies</a>.</p>
+  <div class="row">
+    <button class="btn btn-dark" id="acceptAll">Aceptar todas</button>
+    <button class="btn btn-line" id="rejectAll">Rechazar</button>
+    <button class="btn btn-line" id="configure" style="border-color:#ccc;color:var(--ink)">Configurar</button>
+  </div>
+</div>
+
+<div class="modal" id="prefs" role="dialog" aria-modal="true" aria-label="Preferencias de cookies">
+  <div class="box">
+    <h3>Preferencias de cookies</h3>
+    <p>Elige qué tipos de cookies permites. Puedes cambiarlo cuando quieras desde el pie de página.</p>
+    <div class="opt"><div><b>Necesarias</b><p>Guardan tu elección de cookies. Siempre activas.</p></div><label class="sw"><input type="checkbox" checked disabled><i></i></label></div>
+    <div class="opt"><div><b>Mapa de Google (terceros)</b><p>Carga el mapa interactivo de Google Maps en la sección Horarios.</p></div><label class="sw"><input type="checkbox" id="optMaps"><i></i></label></div>
+    <div class="row" style="display:flex;gap:.6rem;margin-top:1.2rem;flex-wrap:wrap">
+      <button class="btn btn-dark" id="savePrefs">Guardar preferencias</button>
+      <button class="btn btn-line" data-close>Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="policy" role="dialog" aria-modal="true" aria-label="Política de cookies">
+  <div class="box">
+    <h3>Política de cookies</h3>
+    <div class="policy">
+      <p>Las cookies son pequeños archivos que se guardan en tu dispositivo al visitar una web. En esta web utilizamos:</p>
+      <ul>
+        <li><b>Técnicas (necesarias):</b> almacenan tu decisión sobre las cookies para no volver a preguntarte. Se guardan en el almacenamiento local de tu navegador.</li>
+        <li><b>De terceros (Google Maps):</b> solo si las aceptas, se carga un mapa de Google que puede instalar sus propias cookies. Consulta la política de privacidad de Google para más información.</li>
+      </ul>
+      <p>Puedes retirar o modificar tu consentimiento en cualquier momento desde «Configurar cookies» en el pie de página, y borrar las cookies desde los ajustes de tu navegador.</p>
+      <p style="margin-top:.8rem"><b>Responsable:</b> Peluquería Cherry's · Camí de la Vileta, 55, 07011 Palma · Tel. 971 73 41 37.</p>
+    </div>
+    <div style="margin-top:1.2rem"><button class="btn btn-dark" data-close>Cerrar</button></div>
+  </div>
+</div>
+
+<script>
+/* ====== CONFIGURACIÓN DEL CLIENTE (editar aquí) ====== */
+const CONFIG = {
+  // Teléfono del salón en formato internacional, sin + ni espacios (es un fijo, sin WhatsApp).
+  // Si el cliente da de alta un WhatsApp, volver a usar enlaces https://wa.me/<número>.
+  phone: "34971734137",
+  mapQuery: "Camí de la Vileta, 55, 07011 Palma, Illes Balears",
+  mapLat: 39.5896411, mapLng: 2.6241108,
+  // Horario: 0=domingo ... 6=sábado. null = cerrado. [apertura, cierre] en minutos desde 00:00
+  hours: {0:null, 1:null, 2:[570,1140], 3:[570,1140], 4:[570,1140], 5:[570,1140], 6:[570,840]}
+};
+
+/* ====== Utilidades ====== */
+const $ = (s, c=document) => c.querySelector(s);
+const $$ = (s, c=document) => [...c.querySelectorAll(s)];
+$('#year').textContent = new Date().getFullYear();
+
+/* Reservas: llamada al teléfono fijo del salón */
+$$('[data-wa]').forEach(a => { a.href = `tel:+${CONFIG.phone}`; a.removeAttribute('target'); a.removeAttribute('rel'); });
+
+/* Nav */
+const nav = $('#nav');
+nav.classList.add('scrolled'); // barra siempre clara y fija
+const burger = $('#burger');
+burger.addEventListener('click', () => {
+  const o = nav.classList.toggle('open');
+  burger.setAttribute('aria-expanded', o);
+});
+$$('#menu a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); burger.setAttribute('aria-expanded', false); }));
+
+/* Volver arriba */
+const toTop = $('#toTop');
+const toggleTop = () => toTop.classList.toggle('show', scrollY > 500);
+toggleTop(); addEventListener('scroll', toggleTop, {passive:true});
+
+/* Tabs */
+$$('.tab').forEach(t => t.addEventListener('click', () => {
+  $$('.tab').forEach(x => x.setAttribute('aria-selected', x === t));
+  $$('.panel').forEach(p => p.classList.toggle('active', p.id === t.getAttribute('aria-controls')));
+}));
+
+/* Reveal */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+$$('.rv').forEach(el => io.observe(el));
+
+/* Galería: tiles sin imagen + lightbox */
+$$('.tile').forEach(t => {
+  const img = $('img', t);
+  img.addEventListener('error', () => { img.remove(); t.classList.add('noimg'); });
+  t.addEventListener('click', () => {
+    const im = $('img', t); if (!im) return;
+    $('#lbImg').src = im.src; $('#lbImg').alt = im.alt; $('#lb').classList.add('open');
+  });
+});
+$('#lb').addEventListener('click', () => $('#lb').classList.remove('open'));
+addEventListener('keydown', e => { if (e.key === 'Escape') { $('#lb').classList.remove('open'); $$('.modal').forEach(m => m.classList.remove('open')); } });
+
+/* Horario en tiempo real (hora de Madrid) */
+(function(){
+  const parts = new Intl.DateTimeFormat('en-GB', {timeZone:'Europe/Madrid', weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false}).formatToParts(new Date());
+  const get = t => parts.find(p => p.type === t).value;
+  const dayMap = {Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6};
+  const d = dayMap[get('weekday')];
+  const mins = (+get('hour') % 24) * 60 + +get('minute');
+  $$('#hours li').forEach(li => li.classList.toggle('today', +li.dataset.d === d));
+  const h = CONFIG.hours[d];
+  const box = $('#status'), txt = $('#statusText');
+  const fmt = m => `${Math.floor(m/60)}:${String(m%60).padStart(2,'0')}`;
+  if (h && mins >= h[0] && mins < h[1]) { box.classList.add('open'); txt.textContent = `Abierto ahora · cerramos a las ${fmt(h[1])}`; }
+  else {
+    box.classList.add('closed');
+    let next = null;
+    if (h && mins < h[0]) next = `hoy a las ${fmt(h[0])}`;
+    else for (let i=1;i<=7;i++){ const nd=(d+i)%7; if (CONFIG.hours[nd]) { next = (i===1?'mañana':['domingo','lunes','martes','miércoles','jueves','viernes','sábado'][nd]) + ` a las ${fmt(CONFIG.hours[nd][0])}`; break; } }
+    txt.textContent = `Cerrado ahora · abrimos ${next}`;
+  }
+})();
+
+/* ====== COOKIES ====== */
+const KEY = 'cherrys_cookie_consent_v1';
+const readConsent = () => { try { return JSON.parse(localStorage.getItem(KEY)); } catch(e){ return null; } };
+const saveConsent = c => { try { localStorage.setItem(KEY, JSON.stringify(c)); } catch(e){} };
+const banner = $('#cookie'), prefs = $('#prefs'), policy = $('#policy');
+
+function loadMap(){
+  const box = $('#mapbox'); if ($('iframe', box)) return;
+  const f = document.createElement('iframe');
+  f.title = "Mapa de Google: Peluquería Cherry's, Camí de la Vileta 55, Palma";
+  f.loading = 'lazy'; f.referrerPolicy = 'no-referrer-when-downgrade'; f.allowFullscreen = true;
+  f.src = `https://www.google.com/maps?q=${encodeURIComponent(CONFIG.mapQuery)}&ll=${CONFIG.mapLat},${CONFIG.mapLng}&z=16&output=embed`;
+  box.appendChild(f); $('#mapPh').style.display = 'none';
+}
+function applyConsent(c){
+  if (c && c.maps) loadMap();
+  else { const f = $('#mapbox iframe'); if (f) f.remove(); $('#mapPh').style.display = ''; }
+}
+function setConsent(c){ saveConsent(c); applyConsent(c); banner.classList.remove('show'); prefs.classList.remove('open'); }
+
+const stored = readConsent();
+if (stored) applyConsent(stored); else setTimeout(() => banner.classList.add('show'), 700);
+
+$('#acceptAll').onclick = () => setConsent({necessary:true, maps:true});
+$('#rejectAll').onclick = () => setConsent({necessary:true, maps:false});
+$('#configure').onclick = () => { $('#optMaps').checked = !!(readConsent()||{}).maps; prefs.classList.add('open'); };
+$('#openPrefs').onclick = $('#configure').onclick;
+$('#savePrefs').onclick = () => setConsent({necessary:true, maps:$('#optMaps').checked});
+$('#loadMap').onclick = () => setConsent({necessary:true, maps:true});
+$('#openPolicy').onclick = $('#cookiePolicyLink').onclick = () => policy.classList.add('open');
+$$('[data-close]').forEach(b => b.onclick = () => $$('.modal').forEach(m => m.classList.remove('open')));
+$$('.modal').forEach(m => m.addEventListener('click', e => { if (e.target === m) m.classList.remove('open'); }));
+</script>
+</body>
+</html>
